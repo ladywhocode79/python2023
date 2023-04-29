@@ -6,6 +6,8 @@ from selenium.webdriver.common.by import By
 
 service_obj = Service("/Applications/Sonal/selenium/drivers/chromedriver_mac64/chromedriver")
 driver = webdriver.Chrome(service=service_obj)
+#driver = webdriver.Chrome(executable_path="/Applications/Sonal/selenium/drivers/chromedriver_mac64/chromedrive")
+
 driver.maximize_window()
 driver.get("https://demoqa.com/")
 print(driver.title)
